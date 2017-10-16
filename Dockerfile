@@ -20,5 +20,5 @@ WORKDIR /app
 # run maven and pull down detect
 RUN \
   git clone https://github.com/valancej/duck-hub.git && \
-  pwd && \
-  ls
+  cd duck-hub && \
+  mvn package
